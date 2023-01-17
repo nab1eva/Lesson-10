@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+	<nav><div class="container navcontainer">
+			<img src="./images/logo.png" alt="">
+					<ul class="navlist">
+						<li>services</li>
+						<li>about</li>
+						<li>contacts</li>
+						<li class="liborder"><a href="login.html">log in</a></li>
+						<li class="liborder"><a href="index.html">open an account</a></li>
+						<li class="liborder">EN</li>
+					</ul>
+					<img class="burger" src="./images/burger.svg" alt="">
+				</div>
+				</nav>
+	
+	</header>
+	<main>
+		<div class="container fieldcontainer">
+		<form action="second.html">
+		<fieldset>
+			<img class="fieldsetlogo" src="./images/logo.png" alt="">
+			<h1>Welcome to ByTrend!</h1>
+			<p>Already have an account? <span><a class="login" href="login.html">Log in</a></span></p>
+				<div class="name">
+					<div class="fname">
+				<label for="name">First Name<span>*</span></label>
+				<input required type="text" placeholder="Your name" name="name" id="name">
+			</div><div class="lname">
+				<label for="lastname">Last Name<span>*</span></label>
+				<input required type="text" placeholder="Your surname" name="name" id="lastname">
+			</div>
+			</div>
+			<div class="oxiri">
+			<label for="date">Birth Date<span>*</span></label>
+			<input required type="date" name="date" id="date">
+		</div>              
+			<h5>Gender<span>*</span></h5>
+		  <div class="row">
+			<div class="radiobox radioboxmale">
+			  <input 
+			  class="genderinput"                              
+			  type="radio"
+			  name="gender"
+			  id="male"
+			  value="male"
+			  required
+			  />
+			  <label for="male" class="genderlabel">Male</label>
+			</div>
+			<div class="radiobox">
+			  <input 
+			  class="genderinput" 
+			  type="radio"
+			  name="gender"
+			  id="female"
+			  value="female"
+			  required
+			  />
+			  <label for="female" class="genderlabel">Female</label>
+			</div>
+		  </div>
+		
+		<div class="oxiri">
+			<label for="skype">Skype</label>
+			<input id="skype" type="text" placeholder="Your skype">
+		</div>
+		<div class="oxiri">
+			<label for="promo">Promo</label>
+			<input id="promo" type="text" placeholder="Your promo">
+		</div>
+
+		<button class="cont">Continue <img src="./images/arrow.png" alt=""> </button>
+		</fieldset>
+	</form>
+		<h3>©2020 All Rights Reserved. Lorem Technologies, Inc.</h3>
+	</div>
+	</main>
+	<script src="smth.js"></script>
+</body>
+</html>

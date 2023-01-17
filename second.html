@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="second.css">
+</head>
+<body>
+	<header>
+		<nav><div class="container navcontainer">
+			<img src="./images/logo.png" alt="">
+					<ul class="navlist">
+						<li>services</li>
+						<li>about</li>
+						<li>contacts</li>
+						<li class="liborder"><a href="login.html">log in</a></li>
+						<li class="liborder"><a href="index.html">open an account</a></li>
+						<li class="liborder">EN</li>
+					</ul>
+					<img class="burger" src="./images/burger.svg" alt="">
+				</div>
+				</nav>
+	</header>
+	<main>
+		<div class="container containerfieldset">
+			<form action="login.html">
+			<fieldset>
+			<img class="mainlogo" src="./images/logo.png" alt="">
+			<h1>Welcome to ByTrend!</h1>
+			<p>Already have an account? <span><a class="login" href="login.html">Log in</a></span></p>
+			<div>
+				<label for="email">Email<span>*</span></label>
+				<input required id="email" type="text" placeholder="Your email">
+			</div>
+			<div>
+				<label for="phone">Phone<span>*</span></label>
+				<input required pattern="+998(33|7(0|1|7)|88|9\d{1})(\d{7})$" type="text" placeholder="+998 99-999-99-99" id="phone" name="phone">
+			</div>
+			<div class="row">
+				<div class="country">
+				  <label for="location">Country<span>*</span></label>
+				  <select required name="location" id="location">
+					<option value="uzb">Uzbekistan</option>
+					<option value="rus">Russia</option>
+					<option value="usa">USA</option>
+					<option value="jp">Japan</option>
+				
+				</select>
+				</div>
+				<div class="place">
+				  <label for="city">City<span>*</span></label>
+				  <input 
+				  placeholder="Name of the city"
+				  type="text"
+				  name="city"
+				  id="city"
+				  required
+				  /></div>
+		    </div>
+				  <div class="passwordbox">
+					<label for="password">Password<span>*</span></label>
+					<input required placeholder="************" type="password" name="password" id="password" />
+					<i class="bi bi-eye-slash" id="togglePassword"></i>
+				</div>
+				<div class="confirm">
+					<label for="cpassword">Confirm Password<span>*</span></label>
+					<input required id="cpassword" type="text" placeholder="************">
+				</div>
+				<button class="submit" type="submit">Register</button>
+		</fieldset>
+	</form>
+		<h3>By signing up, you are agreeing to our <span>Terms & Conditions</span> and <span> Privacy Policy.</span></h3>
+	</div>
+	</main>
+	<script src="smth.js"></script>
+</body>
+</html>
